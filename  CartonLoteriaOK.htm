@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--  -->
+<!--  -->
+<!--  -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cartón de Lotería Carmelita</title>
+
+<script type="text/javascript">
+
+//http://www.webdeveloper.com/forum/showthread.php?t=181707
+
+function getRandomArray(min,max){
+    var A= [];
+    while(max>= min) A.push(max--)    
+    A.sort(function(){return .5- Math.random()});  
+  
+  
+	return A;
+}
+
+
+function tablero(){
+var ListaNumeros= getRandomArray(1,25);
+
+
+document.getElementById("t1").src = "" + ListaNumeros[0] + ".jpg" ;
+document.getElementById("t2").src = "" + ListaNumeros[1] + ".jpg";
+document.getElementById("t3").src = "" + ListaNumeros[2] + ".jpg";
+document.getElementById("t4").src = "" + ListaNumeros[3] + ".jpg";
+document.getElementById("t5").src = "" + ListaNumeros[4] + ".jpg";
+document.getElementById("t6").src = "" + ListaNumeros[5] + ".jpg";
+document.getElementById("t7").src = "" + ListaNumeros[6] + ".jpg";
+document.getElementById("t8").src = "" + ListaNumeros[7] + ".jpg";
+document.getElementById("t9").src = "" + ListaNumeros[8] + ".jpg";
+document.getElementById("t10").src = "" + ListaNumeros[9] + ".jpg";
+document.getElementById("t11").src = "" + ListaNumeros[10] + ".jpg";
+document.getElementById("t12").src = "" + ListaNumeros[11] + ".jpg";
+document.getElementById("t13").src = "" + ListaNumeros[12] + ".jpg";
+document.getElementById("t14").src = "" + ListaNumeros[13] + ".jpg";
+document.getElementById("t15").src = "" + ListaNumeros[14] + ".jpg";
+document.getElementById("t16").src = "" + ListaNumeros[15] + ".jpg";
+  
+}
+
+
+
+
+<!-- Javascript -->
+</script>
+
+
+  
+<style type="text/css">
+.Basico {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Basico {
+	font-size: small;
+}
+</style>
+  
+</head>
+
+
+
+
+
+
+
+
+
+<body onload="tablero()">
+<script>
+  
+<!-- Primera versión con style. filter... luego con cambio de imagen -->  
+function myFunction(x) {
+<!--  https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_js_filter -->
+  document.getElementById(x).style.filter = "grayscale(100%)";
+  
+ <!--  <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button> -->
+
+}
+</script>
+  
+  
+<table width="100%" ali="" align="center" border="0">
+  <tbody><tr valign="top" align="center">
+    <th scope="col"><table width="600" border="0" cellpadding="2" cellspacing="2">
+      <tbody><tr>
+        <th colspan="4" scope="col"></th>
+        </tr>
+      <tr>
+        <th scope="col"><img width="150" height="220" id="t1" onclick="myFunction('t1')" ></th>
+        <th scope="col"><img width="150" height="220" id="t2" onclick="myFunction('t2')"></th>
+        <th scope="col"><img width="150" height="220" id="t3"onclick="myFunction('t3')" ></th>
+        <th scope="col"><img width="150" height="220" id="t4" onclick="myFunction('t4')" ></th>
+        
+      </tr>
+      <tr>
+        <th scope="col"><img  width="150" height="220" id="t5" onclick="myFunction('t5')" ></th>
+        <th scope="col"><img  width="150" height="220" id="t6" onclick="myFunction('t6')" ></th>
+       <th scope="col"><img  width="150" height="220" id="t7" onclick="myFunction('t7')"></th>
+         <th scope="col"><img width="150" height="220" id="t8" onclick="myFunction('t8')" ></th>
+      </tr>
+      <tr>
+        <th scope="col"><img   width="150" height="220" id="t9" onclick="myFunction('t9')"></th>
+        <th scope="col"><img   width="150" height="220" id="t10" onclick="myFunction('t10')" ></th>
+       <th scope="col"><img   width="150" height="220" id="t11" onclick="myFunction('t11')"></th>
+        <th scope="col"><img  width="150"  height="220" id="t12" onclick="myFunction('t12')"></th>
+      </tr>
+      <tr>
+       <th scope="col"><img    width="150" height="220" id="t13" onclick="myFunction('t13')"></th>
+        <th scope="col"><img   width="150" height="220" id="t14" onclick="myFunction('t14')" ></th>
+        <th scope="col"><img   width="150" height="220" id="t15" onclick="myFunction('t15')"></th>
+        <th scope="col"><img   width="150" height="220" id="t16" onclick="myFunction('t16')" ></th>
+      </tr>
+      <tr>
+      <tr>
+      </tr>
+      <tr>
+       </tbody></table><h6> <a  onclick="location.reload()">Nuevo Tablero</a> -  Lotería del Carmelo Descalzo 2020</h6> 
+   </th> 
+  </tr>
+</tbody></table>
+ 
+  
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+  
+</body></html>
